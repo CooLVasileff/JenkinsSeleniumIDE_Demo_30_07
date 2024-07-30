@@ -8,7 +8,7 @@ pipeline{
                 git branch: 'main', url: "https://github.com/CooLVasileff/JenkinsSeleniumIDE_Demo_30_07"
             }
         }
-        stage("Set up .Net Core"){
+        stage("Set up .Net core"){
             //install dot net SDK
             steps {
                 bat '''
