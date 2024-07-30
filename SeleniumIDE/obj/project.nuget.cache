@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "C8FYrZzzJrk=",
+  "dgSpecHash": "BHvTeEoQNg/AwKrk89HxOdjTymyRLRKoIzRvKNLcAO9moVtd57VdPjrG0t2eXfbaaWHZ9kukQoN41NUg52eiTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vesel\\JenkinsDemo\\1-SeleniumIDE\\SeleniumIDE\\SeleniumIde.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\vesel\\.nuget\\packages\\nunit.analyzers\\3.3.0\\nunit.analyzers.3.3.0.nupkg.sha512",
     "C:\\Users\\vesel\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512",
     "C:\\Users\\vesel\\.nuget\\packages\\selenium.webdriver\\4.23.0\\selenium.webdriver.4.23.0.nupkg.sha512",
+    "C:\\Users\\vesel\\.nuget\\packages\\selenium.webdriver.chromedriver\\127.0.6533.7200\\selenium.webdriver.chromedriver.127.0.6533.7200.nupkg.sha512",
     "C:\\Users\\vesel\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []

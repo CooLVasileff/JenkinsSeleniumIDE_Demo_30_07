@@ -388,6 +388,12 @@
           "buildTransitive/Selenium.WebDriver.targets": {}
         }
       },
+      "Selenium.WebDriver.ChromeDriver/127.0.6533.7200": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
       "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
@@ -1300,6 +1306,30 @@
         "selenium.webdriver.nuspec"
       ]
     },
+    "Selenium.WebDriver.ChromeDriver/127.0.6533.7200": {
+      "sha512": "O3YVUtyczi9xFNUi51WyUVQkqIvn87N+/bJe6NEXtSiJCzLXk4t5CI0owDrqoISHOr4HTuiXIqlSnJT3b+Cvjg==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/127.0.6533.7200",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "build/DefinePropertiesChromeDriver.targets",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/LICENSE.chromedriver",
+        "driver/linux64/chromedriver",
+        "driver/mac64/LICENSE.chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/mac64arm/LICENSE.chromedriver",
+        "driver/mac64arm/chromedriver",
+        "driver/win32/LICENSE.chromedriver",
+        "driver/win32/chromedriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.127.0.6533.7200.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
     "System.Reflection.Metadata/1.6.0": {
       "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
@@ -1329,6 +1359,7 @@
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
       "Selenium.WebDriver >= 4.23.0",
+      "Selenium.WebDriver.ChromeDriver >= 127.0.6533.7200",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -1397,6 +1428,10 @@
             "target": "Package",
             "version": "[4.23.0, )"
           },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[127.0.6533.7200, )"
+          },
           "coverlet.collector": {
             "target": "Package",
             "version": "[3.1.2, )"
@@ -1418,7 +1453,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

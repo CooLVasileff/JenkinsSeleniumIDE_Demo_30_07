@@ -18,23 +18,6 @@ pipeline {
                 '''
             }
         }
-        stage("Download ChromeDriver") {
-            steps {
-                script {
-                    def chromeVersion = bat(
-                        script: 'reg query "HKEY_CURRENT_USER\\Software\\Google\\Chrome\\BLBeacon" /v version',
-                        returnStdout: true
-                    ).trim()
-                    def match = (chromeVersion =~ /([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)/)
-                    def chromeMajorVersion = match[0][1]
-                    
-                    def chromeDriverUrl = "https://chromedriver.storage.googleapis.com/${chromeMajorVersion}.0.0/chromedriver_win32.zip"
-                    echo "Downloading ChromeDriver from ${chromeDriverUrl}"
-                    bat "curl -L -o chromedriver.zip ${chromeDriverUrl}"
-                    bat 'tar -xzf chromedriver.zip -C C:\\path\\to\\desired\\location' // Update the path accordingly
-                }
-            }
-        }
         stage("Restoring nuget packages") {
             steps {
                 // Restore dependencies
